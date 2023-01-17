@@ -1,0 +1,54 @@
+# Bold High Intensty
+biblack="\3[1;90m"      # Black
+bired="\3[1;91m"        # Red
+bigreen="\3[1;92m"      # Green
+biyellow="\3[1;93m"     # Yellow
+biblue="\3[1;94m"       # Blue
+bipurple="\3[1;95m"     # Purple
+bicyan="\3[1;96m"       # Cyan
+# Bold High Intensty
+
+# Bold High Intensty
+biblack="\033[1;90m"      # Black
+bired="\033[1;91m"        # Red
+bigreen="\033[1;92m"      # Green
+biyellow="\033[1;93m"     # Yellow
+biblue="\033[1;94m"       # Blue
+bipurple="\033[1;95m"     # Purple
+bicyan="\033[1;96m"       # Cyan
+# Bold High
+
+import os
+
+while True:
+    os.system('clear')
+    print(biblack+"""
+███╗░░██╗░█████╗░██╗░░░██╗░█████╗░███╗░░██╗
+████╗░██║██╔══██╗╚██╗░██╔╝██╔══██╗████╗░██║
+██╔██╗██║██║░░██║░╚████╔╝░██║░░██║██╔██╗██║
+██║╚████║██║░░██║░░╚██╔╝░░██║░░██║██║╚████║
+██║░╚███║╚█████╔╝░░░██║░░░╚█████╔╝██║░╚███║
+╚═╝░░╚══╝░╚════╝░░░░╚═╝░░░░╚════╝░╚═╝░░╚══╝""")
+
+
+    print(bipurple+"[×] Show Your Option")
+    print(biyellow+"\n[1] CIRCLE ID TO NUMBER\n[2] CIRCLE NUMBER TO ID\n")
+
+    a=str(input(bicyan+"\n[>] Select Your Option: "))
+    if a=="1":
+        os.system("python IDtoNb")
+
+        os.system('clear')
+        a=()
+    elif a=="2":
+        os.system("python NbToId")
+        os.system('clear')
+        a=()
+    
+        
+
+    else:
+        print("Wrong")
+        a=()
+
+os.system('clear')
